@@ -76,10 +76,10 @@ int main()
 	auto certstore = soup::make_shared<CertStore>();
 	{
 		X509Certchain certchain;
-		SOUP_ASSERT(certchain.fromPem(string::fromFile("cert/fullchain.pem")));
+		SOUP_ASSERT(certchain.fromPem(string::fromFile("cert/cert.pem")));
 		certstore->add(
 			std::move(certchain),
-			RsaPrivateKey::fromPem(string::fromFile("cert/privkey.pem"))
+			RsaPrivateKey::fromPem(string::fromFile("cert/key.pem"))
 		);
 	}
 
