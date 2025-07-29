@@ -15,3 +15,7 @@ First, you'll need to obtain an endpoint from <https://pubsub.cat/endpoints.json
 ### HTTP
 
 - To publish a message, send a request with path "/pub" and a "topic" query argument. For example, `curl notls.pubsub.cat/pub?topic=test --data "Hello"` to send "Hello" to every subscriber of `test`.
+
+---
+
+A service by Calamity, Inc. • [Status Page](https://status.calamity.inc/)
