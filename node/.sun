@@ -1,2 +1,2 @@
-require ../Soup/soup
+require Soup/soup
 +*.cpp
